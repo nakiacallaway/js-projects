@@ -73,8 +73,10 @@ console.log(maskColor)
 
 //array.filter
 let masks = tmnt.filter(size => {
-    if (color.length > 5);
+    //debugger;
+    if (size.color.length > 5) {
     return size;
+    }
 });
 console.log(masks);
 
