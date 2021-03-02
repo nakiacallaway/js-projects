@@ -48,9 +48,9 @@ let movies = [
 /*  b. Create a function that when called loops through your array and console.logs
     the details for each of your movies */
 
-    // movies.forEach((movie) => {
-    //     console.log(`${movie.title} was made in ${movie.year}.  It received a rating of ${movie.imdb} on IMDB in the genres of ${movie.genre}, with the following description: ${movie.description}`);
-    // });
+movies.forEach((movie) => {
+    console.log(`${movie.title} was made in ${movie.year}.  It received a rating of ${movie.imdb} on IMDB in the genres of ${movie.genre}, with the following description: ${movie.description}`);
+});
 
     /*
     c. Create a function that will find a movie by it's title 
@@ -65,11 +65,12 @@ console.log(jaeger);  //This doesn't work yet, it returns the first movie in the
 
 
 
-//const searchTitle = ()=> {
-//     if (moviePick == ); 
-//     console.log(movies.title);
-// };
-// searchTitle();
+const searchTitle = moviePick => {
+    let foundMovie = movies.find(movie => {
+    return movies.title === moviePick); 
+    console.log(movies.title)};
+};
+searchTitle('Pacific Rim');
 
 
 
